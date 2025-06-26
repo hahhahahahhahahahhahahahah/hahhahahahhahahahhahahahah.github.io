@@ -1,0 +1,12 @@
+body { font-family: sans-serif; text-align: center; }
+#board { display: inline-grid; margin-top: 10px; }
+.cell {
+  width: 30px; height: 30px;
+  border: 1px solid #888;
+  line-height: 30px; text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.cell.open { background: #ddd; cursor: default; }
+.cell.mine { background: red; }
+.cell.flag { background: yellow; }
