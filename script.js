@@ -13,7 +13,7 @@ function init(R, C, M) {
   boardEl.style.gridTemplate = `repeat(${R}, 1fr) / repeat(${C}, 1fr)`;
 
   // Tạo mảng cell objects
-  const cells = Array(R).fill().map(_, i =>
+  const cells = Array(R).fill().map((_, i) => 
     Array(C).fill().map((__, j) => ({
       i, j, mine: false, near: 0, opened: false, flagged: false
     }))
